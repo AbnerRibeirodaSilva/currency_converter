@@ -25,8 +25,8 @@ class LabelButton extends StatelessWidget {
           borderRadius: BorderRadius.circular(10),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.35),
-              spreadRadius: 3,
+              color: Colors.blue.withOpacity(0.35),
+              spreadRadius: 5,
               blurRadius: 9,
               offset: Offset(0, 3),
             ),
@@ -35,7 +35,11 @@ class LabelButton extends StatelessWidget {
           onPressed: onPressed,
           child: Text(
             label,
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(
+              color: Colors.white70,
+              letterSpacing: 1.9,
+              fontSize: 17,
+            ),
           )),
     );
   }
